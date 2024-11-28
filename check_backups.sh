@@ -5,7 +5,7 @@ DATABASE=`dbcli list-databases | awk 'NR>3{print $2}'`
 FILTRO=`date -d "yesterday" +%A", "%B" "%d", "%Y`
 MES=`date -d "yesterday" +%B`
 TODAY=`date +%A", "%B" "%d", "%Y`
-EMAIL=dsanmaci@emeal.nttdata.com
+EMAIL=${EMAIL}
 LOG=/opt/oracle/dcs/log/jobs/
 
 for X in `dbcli list-jobs | grep -i "${DATABASE}" | grep "${FILTRO}" | grep Failure | awk '{print $1}'`
