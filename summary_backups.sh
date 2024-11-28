@@ -7,7 +7,7 @@ DATABASE=`dbcli list-databases | awk 'NR>3{print $2}'`
 FILTRO=`date -d "yesterday" +%A", "%B" "%d", "%Y`
 MES=`date -d "yesterday" +%B`
 TODAY=`date +%A", "%B" "%d", "%Y`
-EMAIL=dsanmaci@emeal.nttdata.com
+EMAIL=${EMAIL}
 
 
 for X in `dbcli list-jobs | grep -i "${DATABASE}" | grep "${FILTRO}" | grep Success | awk '{print $1}'`
