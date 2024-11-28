@@ -37,5 +37,5 @@ for X in `dbcli list-jobs | grep -i "${DATABASE}" | grep "${FILTRO}" | grep Succ
      '`
 done
 
-printf "Current Database is: ${DATABASE}\n\n${SUMMARY}" | mailx -s "[iBOST][${DATABASE}] Check Jobs OCI - ${TODAY}." ${EMAIL}
+printf "Current Database is: ${DATABASE}\n\n${SUMMARY}" | mailx -s "[${DATABASE}] Check Jobs OCI - ${TODAY}." ${EMAIL}
 
