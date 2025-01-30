@@ -1,5 +1,5 @@
 #!/bin/bash
-# DSM NTTDATA-DBA
+# DSM 
 
 . /root/.bash_profile
 
