@@ -1,5 +1,5 @@
 #!/bin/bash
-# DSM NTTDATA-DBA
+# DSM 
 
 DATABASE=`dbcli list-databases | awk 'NR>3{print $2}'`
 FILTRO=`date -d "yesterday" +%A", "%B" "%d", "%Y`
